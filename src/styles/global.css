@@ -1,0 +1,47 @@
+/* global.css or styles.css */
+
+/* Add these styles to position the navbar at the top */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index as needed based on your layout */
+  border-bottom: 1px solid #ccc; /* Add a gray border at the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a light shadow effect */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Add padding for better visual appearance */
+}
+
+/* Optional: Add padding to the body to avoid content being overlapped by the fixed navbar */
+body {
+  padding-top: 56px; /* Adjust this value based on your navbar's height */
+}
+
+/* Add border to the sidebar */
+.sidebar {
+  border-right: 1px solid #ccc;
+  padding: 10px; /* Optional: Adjust padding for better visual appearance */
+}
+
+/* Remove any unwanted spacing for the logo and icons */
+.navbar-brand,
+.navbar-nav .nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+/* If there is a specific class for the icons, adjust their margin too */
+.sidebar-icon {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the logo */
+.navbar-logo {
+  flex-grow: 1;
+  text-align: center;
+}

@@ -1,0 +1,4 @@
+"Process atoms;Violations;Impact;Label;Created by;Created on;Actions"
+"Open ticket must not occur after Closed while blocke;6024;High;Compliance;SAP Best Practices;02.08.23;yes"
+"Closed while blocked must occur;3842;Medium;Performance;BPMN model;19.12.23;no"
+"Request escalation is not followed by a corresponding;906;Low;Data quality;Manual atom;01.11.23;yes"

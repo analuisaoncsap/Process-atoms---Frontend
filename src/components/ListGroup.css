@@ -1,0 +1,23 @@
+/* ListGroup.css */
+
+.page-container {
+    background-color: #ccc; /* Set the background color for the surrounding area */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .list-container {
+    background-color: #fff; /* Set the background color for the container */
+    padding: 20px; /* Add padding for spacing inside the container */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+  }
+  
+  .list-group {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .list-group li {
+    margin-bottom: 8px; /* Add margin between list items */
+  }
+  
