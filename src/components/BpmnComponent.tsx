@@ -12,19 +12,15 @@ const BpmnComponent: React.FC<BpmnComponentProps> = ({ xml }) => {
 
   useEffect(() => {
     const bpmnModeler = new BpmnModeler({
-      container: bpmnModelerRef.current,
+      container: bpmnModelerRef.current!,
       keyboard: {
         bindTo: window,
       },
     });
 
     if (xml) {
-      bpmnModeler.importXML(xml, (err: any) => {
-        if (err) {
-          console.error("Failed to import BPMN diagram", err);
-        } else {
-          bpmnModeler.get("canvas").zoom("fit-viewport");
-        }
+      bpmnModeler.importXML(xml).catch((error) => {
+        console.error("[BpmnComponent] Failed to import XML:", error);
       });
     }
 
